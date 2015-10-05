@@ -172,7 +172,7 @@ def generate_minimal_tree(tree,p,l):
         if count >10:
             p=min(global_minima.keys())
             print p
-            print ' '.join(global_minima[p])
+            print global_minima[p]
             break
         # For each maximum edge
         for m in max_dict:
@@ -257,7 +257,7 @@ def main():
         print min_diff
         print min_diff_list
     elif l > 2:
-        l=6
+        # l=6
         k=3
         i=3
         p=4
