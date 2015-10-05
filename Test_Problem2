@@ -172,7 +172,7 @@ def generate_minimal_tree(tree,p,l):
         if count >10:
             p=min(global_minima.keys())
             print p
-            print global_minima[p]
+            print (traverse_tree(global_minima[p][0], ["BFS"])[3    ])
             break
         # For each maximum edge
         for m in max_dict:
